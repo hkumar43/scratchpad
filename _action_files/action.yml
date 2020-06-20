@@ -6,7 +6,7 @@ inputs:
     description: Either 'true' or 'false'.  Whether or not to commit converted markdown files from notebooks and word documents into the _posts directory in your repo.  This is useful for debugging.
     required: false
     default: false
-  SSH_DEPLOY_KEY: "{{secrets.SSH_DEPLOY_KEY}}"
+  SSH_DEPLOY_KEY: ${{ secrets.SSH_DEPLOY_KEY }}
     description: a ssh deploy key is required if BOOL_SAVE_MARKDOWN = 'true'
     required: false
 branding:
